@@ -17,3 +17,7 @@
 ### [Lab08. Introduction to Elastic Load Balancing](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab08.md)
 
 ### [Lab09. Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab09.md)
+
+### [Lab10. Building and Deploying Containers Using Amazon Elastic Container Service](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab10.md)
+
+### [Lab11. Introduction to AWS Lambda](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab11.md)
