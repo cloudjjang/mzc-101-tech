@@ -2,7 +2,7 @@
 
 ### [Lab01. Introduction to AWS Identity and Access Management (IAM)](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab01.md)
 
-### [Lab02. Introduction to Amazon EC2 (1Credit)](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab02.md)
+### [Lab02. Introduction to Amazon EC2](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab02.md)
 
 ### [Lab03. Introduction to Amazon Simple Storage Service (S3)](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab03.md)
 
