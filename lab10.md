@@ -683,9 +683,10 @@ aws cloudformation delete-stack --stack-name fargate-demo
 **40. GitHub 정리하기**
 
 * https://github.com/settings/tokens로 이동하여 mzc-lab-ecs 레이블이 붙은 토큰을 삭제하십시오.
-
+![image](https://user-images.githubusercontent.com/48195985/62177087-a2cb6280-b37e-11e9-855d-5ee114019bf8.png)
 
 * https://github.com/settings/ssh/로 이동하여 mzc-lab-ecs 레이블이 지정된 키를 삭제하십시오.
+![image](https://user-images.githubusercontent.com/48195985/62177114-b7a7f600-b37e-11e9-82fa-b767c6755dd4.png)
 
 <br>
 
@@ -694,8 +695,12 @@ aws cloudformation delete-stack --stack-name fargate-demo
 > **Cloud9 EC2 인스턴스를 삭제합니다.**
 
 > * 서비스 메뉴에 Cloud9을 클릭합니다. (아래와 같은 페이지가 열립니다.)
-> * mzc-lab-ecs 작업환경이 선택되었는지 확인하고 우측 상단의  버튼을 클릭합니다.
-> * 박스에 Delete를 입력하고  버튼을 클릭합니다.
+![image](https://user-images.githubusercontent.com/48195985/62177135-cabac600-b37e-11e9-8676-c8ff37ac1f98.png)
+
+> * mzc-lab-ecs 작업환경이 선택되었는지 확인하고 우측 상단의  ![image](https://user-images.githubusercontent.com/48195985/62177166-e45c0d80-b37e-11e9-87cb-4f0e40ecde41.png)버튼을 클릭합니다.
+ 
+> * 박스에 Delete를 입력하고  버튼을 클릭합니다.\
+> ![image](https://user-images.githubusercontent.com/48195985/62177178-f047cf80-b37e-11e9-931e-cd5ff6f700e9.png)
 
 <br>
 
