@@ -14,7 +14,14 @@ AWS Identity and Access Management (IAM)는 Amazon Web Services (AWS) 고객이 
 * IAM 로그인 URL 찾기 및 사용이 가능합니다.
 * 서비스 액세스 정책을 적용하고 테스트 할 수 있습니다.
 
+### QWIKLABS 사이트 로그인하기
 
+* 다음 주소를 클릭하고 QWIKLABS 사이트로 이동합니다.
+> https://www.qwiklabs.com/
+
+* 화면 상단 우측의 Join 버튼을 클릭하고 로그인 합니다.
+
+* 화면상단의 Search 박스에 실습명을 검색한 후 클릭합니다.
 
 ### Start Lab:
 
