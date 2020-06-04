@@ -21,3 +21,5 @@
 ### [Lab10. Building and Deploying Containers Using Amazon Elastic Container Service](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab10.md)
 
 ### [Lab11. Introduction to AWS Lambda](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab11.md)
+
+### [Lab12. Introduction to Amazon Aurora](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab12.md)
