@@ -75,6 +75,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 
 <br>
+<br>
 
 ## 작업 1 : Amazon Aurora 인스턴스 생성
 **이 작업에서는 Amazon Aurora 인스턴스를 생성합니다.**
@@ -153,6 +154,8 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 > 오로라 RDS 인스턴스를 시작 중입니다. RDS 인스턴스를 시작하는 데 최대 5분이 걸릴 수 있습니다. 그러나 다음 작업을 계속할 수 있습니다.
 
+<br>
+<br>
 
 
 ## 작업 2 : Amazon EC2 인스턴스에 연결
@@ -176,9 +179,10 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 17. "**Yes**"클릭합니다.
 
+<br>
+<br>
 
-
-# 작업 3 : Amazon RDS 인스턴스에 연결
+## 작업 3 : Amazon RDS 인스턴스에 연결
 **이 작업에서는 MySQL 인스턴스뿐만 아니라 Amazon Aurora 인스턴스에 연결합니다. CloudFormation을 사용하여 실습을 시작할 때 MySQL 인스턴스가 시작되었습니다.**
 
 ### MySQL 엔드포인트 획득
@@ -288,7 +292,8 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 <br>
 <br>
 
-# 작업 4 : SQL 덤프 파일을 데이터베이스로 가져오기
+
+## 작업 4 : SQL 덤프 파일을 데이터베이스로 가져오기
 
 35. "**원격 데스트탑 연결**"에서 Windows 시작 버튼 옆의 돋보기 아이콘을 클릭합니다.
 
@@ -356,7 +361,8 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 <br>
 <br>
 
-# 작업 5 : 데이터베이스 쿼리
+
+## 작업 5 : 데이터베이스 쿼리
 
 이 작업에서는 MySQL 데이터베이스와 Aurora 데이터베이스로 가져온 데이터베이스를 쿼리합니다.
 
