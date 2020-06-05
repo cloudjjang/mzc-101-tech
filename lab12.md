@@ -24,10 +24,12 @@
 
 https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색해서 실습을 진행합니다.
 
+<br>
 
-**1. 상단 화면에  ![image](https://user-images.githubusercontent.com/48195985/61844251-b50a5400-aed9-11e9-92b0-cb5572b9790c.png)을 클릭하여 실습을 시작합니다.** 
-  > 그러면 LAB 리소스 프로비저닝 프로세스가 시작됩니다. LAB 리소스를 구성하는데 소요되는 예상시간이 표시됩니다. 다음을 진행하기 전에 리소스 프로비저닝이 완료될 때까지 기다려야 합니다.
+**1. 상단 화면에  ![image](https://user-images.githubusercontent.com/48195985/61844251-b50a5400-aed9-11e9-92b0-cb5572b9790c.png)을 클릭하여 실습을 시작합니다.**<br>
+> 그러면 LAB 리소스 프로비저닝 프로세스가 시작됩니다. LAB 리소스를 구성하는데 소요되는 예상시간이 표시됩니다. 다음을 진행하기 전에 리소스 프로비저닝이 완료될 때까지 기다려야 합니다.
 
+<br>
 
 **2. ![image](https://user-images.githubusercontent.com/48195985/61844296-e4b95c00-aed9-11e9-8323-6790feb05b65.png)을 클릭하면 LAB을 위한 콘솔에 자동으로 로그인이 가능합니다.**
   
@@ -48,9 +50,9 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 <span style="color:red">**Error : You must first log out**</span>\
 ![image](https://user-images.githubusercontent.com/48195985/61844528-b1c39800-aeda-11e9-976e-b7a24fee70f4.png)
 
-위 메시지가 표시되면 다른 AWS 계정에 로그인 되어 있는 창을 로그아웃해야 합니다.
+위 메시지가 표시되면 다른 AWS 계정에 로그인 되어 있는 창을 로그아웃 합니다.
 
-* 빨간 박스표시된 “Click here”를 클릭합니다.
+* 빨간 박스표시된 “**Click here**”를 클릭합니다.
 * 기존 웹 브라우저가 닫히면 Qwiklabs 창으로 되돌아 갑니다.
 * ![image](https://user-images.githubusercontent.com/48195985/61844479-880a7100-aeda-11e9-90f8-b0f1fa289f6f.png)을 다시 클릭합니다.
 
@@ -80,11 +82,11 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 ## 작업 1 : Amazon Aurora 인스턴스 생성
 **이 작업에서는 Amazon Aurora 인스턴스를 생성합니다.**
 
-3. AWS관리 콘솔 상단의   ![image](https://user-images.githubusercontent.com/48195985/83719113-5c672400-a671-11ea-94f6-d8a91e7a568e.png)메뉴에서 **RDS**를 클릭합니다.
+3. AWS관리 콘솔 상단의   <img src="https://user-images.githubusercontent.com/48195985/83719113-5c672400-a671-11ea-94f6-d8a91e7a568e.png" width="60" height="20">메뉴에서 **RDS**를 클릭합니다.
 
 4. 왼쪽 탐색창에서 **“데이터베이스”**를 클릭합니다.
 
-5. 화면 우측 상단에 ![image](https://user-images.githubusercontent.com/48195985/61848523-577e0380-aee9-11e9-929a-466ce5c7c70b.png)을 클릭한 후 다음을 구성합니다.
+5. 화면 우측 상단에 <img src="https://user-images.githubusercontent.com/48195985/61848523-577e0380-aee9-11e9-929a-466ce5c7c70b.png" width="120" height="25">을 클릭한 후 다음을 구성합니다.
 
 * 데이터베이스 생성 방식 선택에서 : **표준 생성**
 * 엔진 옵션 : **Amazon Aurora**
@@ -122,7 +124,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 * **추가 연결 구성**을 클릭해서 확장합니다.
 * 서브넷 그룹 : **aurora**
 * 퍼블릭 액세스 가능 : **아니요**
-* VPC 보안 그룹 : 기존 VPC 보안 그룹 선택창에서 **DBSecurityGroup**을 선택하고 기존에 적용되어 있는 **default** 보안그룹은 삭제합니다. (![image](https://user-images.githubusercontent.com/48195985/83717241-32136780-a66d-11ea-88b4-3eed3b160d5e.png))
+* VPC 보안 그룹 : 기존 VPC 보안 그룹 선택창에서 **DBSecurityGroup**을 선택하고 기존에 적용되어 있는 <img src="https://user-images.githubusercontent.com/48195985/83717241-32136780-a66d-11ea-88b4-3eed3b160d5e.png" width="80" height="25"> 보안그룹은 삭제합니다. 
 
 
 > 서브넷은 보안 및 운영 요구 사항에 따라 리소스를 그룹화 하도록 지정하는 VPC의 IP 주소 범위의 세그먼트입니다. DB 서브넷 그룹은 VPC에서 만든 서브넷(일반적으로 비공개)의 모음이며 DB 인스턴스에 대해 지정합니다. DB 서브넷 그룹을 사용하면 CLI 또는 API를 사용하여 DB 인스턴스를 만들 때 특정 VPC를 지정할 수 있습니다. 콘솔을 사용하는 경우 사용하려는 VPC 및 서브넷만 선택할 수 있습니다.
@@ -139,17 +141,17 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 * 초기 데이터베이스 이름 : **MyDB**
 
 
-11. **암호화** 섹션에서 **암호화 활성화**(![image](https://user-images.githubusercontent.com/48195985/83718571-43aa3e80-a670-11ea-8407-615aff75b7bd.png)) 체크박스를 체크해제 합니다.
+11. **암호화** 섹션에서 <img src="https://user-images.githubusercontent.com/48195985/83718571-43aa3e80-a670-11ea-8407-615aff75b7bd.png" width="120" height="20">의 체크박스를 체크해제 합니다.
 
 > Amazon RDS DB 인스턴스에 대한 암호화 옵션을 활성화하여 Amazon RDS 인스턴스 및 스냅 샷을 암호화 할 수 있습니다.
 > 유휴 상태에서 암호화 된 데이터에는 DB 인스턴스의 기본 스토리지, 자동 백업, 읽기 전용 복제본 및 스냅 샷이 포함됩니다.
 
 
-12. **유지관리** 섹션에서 **마이너 버전 자동 업그레이드 사용**(![image](https://user-images.githubusercontent.com/48195985/83718644-705e5600-a670-11ea-9414-97a82fc9d333.png))을 체크해제 합니다.
+12. **유지관리** 섹션에서 <img src="https://user-images.githubusercontent.com/48195985/83718644-705e5600-a670-11ea-9414-97a82fc9d333.png" width="200" height="20">을 체크해제 합니다.
 
 
 
-13. 화면 하단으로 스크롤한 다음 ![image](https://user-images.githubusercontent.com/48195985/83718845-caf7b200-a670-11ea-8a29-6b560440a7f7.png)을 클릭합니다.
+13. 화면 하단으로 스크롤한 다음 <img src="https://user-images.githubusercontent.com/48195985/61848523-577e0380-aee9-11e9-929a-466ce5c7c70b.png" width="120" height="25">을 클릭합니다.
 
 
 > 오로라 RDS 인스턴스를 시작 중입니다. RDS 인스턴스를 시작하는 데 최대 5분이 걸릴 수 있습니다. 그러나 다음 작업을 계속할 수 있습니다.
@@ -163,7 +165,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 14. 원도우 인스턴스에서 **Remote Desktop Connection** 클라이언트를 실행한 후 다음을 입력합니다.
 
-    > (윈도우 서버 왼쪽 하단에 ![image](https://user-images.githubusercontent.com/48195985/83720954-101de300-a675-11ea-816d-48c3bc276bb2.png) 돋보기 아이콘을 클릭한 후 "**remote**"를 입력하면 "**Remote Desktop Connection**" 프록그램이 검색됩니다. 클릭해서 실행합니다.)
+    > (윈도우 서버 왼쪽 하단에 <img src="https://user-images.githubusercontent.com/48195985/83720954-101de300-a675-11ea-816d-48c3bc276bb2.png" width="60" height="25"> 돋보기 아이콘을 클릭한 후 "**remote**"를 입력하면 "**Remote Desktop Connection**" 프록그램이 검색됩니다. 클릭해서 실행합니다.)
 
 * ![image](https://user-images.githubusercontent.com/48195985/83721219-9b977400-a675-11ea-88f6-c63074bec814.png) "Show Options"를 클릭합니다.
 * Computer : 실습 지침의 왼쪽에 있는 **_WindowsIP_**에 명시된 IP Address를 입력합니다.
@@ -188,7 +190,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 ### MySQL 엔드포인트 획득
 > Windows 인스턴스에서 데이터베이스에 연결하려면 데이터베이스에 대한 데이터베이스 연결 세부 정보를 가져와야 합니다.
 
-18. AWS 관리 콘솔의 ![image](https://user-images.githubusercontent.com/48195985/83719113-5c672400-a671-11ea-94f6-d8a91e7a568e.png) 메뉴에서 **RDS**를 클릭합니다.
+18. AWS 관리 콘솔의 <img src="https://user-images.githubusercontent.com/48195985/83719113-5c672400-a671-11ea-94f6-d8a91e7a568e.png" width="50" height="20"> 메뉴에서 **RDS**를 클릭합니다.
 
 19. 왼쪽 탐색창에서 **데이터베이스**를 클릭합니다.
 
@@ -248,7 +250,7 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 ### MySQL WorkBench 시작
 
-26. "**원격 데스크탑**"으로 연결된 윈도우 서버 왼쪽 하단에 ![image](https://user-images.githubusercontent.com/48195985/83720954-101de300-a675-11ea-816d-48c3bc276bb2.png) 돋보기 아이콘을 클릭한 후 "**mysql**"를 입력하면 "**MySQL Workbench 6.3 CE**" 프록그램이 검색됩니다. 
+26. "**원격 데스크탑**"으로 연결된 윈도우 서버 왼쪽 하단에 <img src="https://user-images.githubusercontent.com/48195985/83720954-101de300-a675-11ea-816d-48c3bc276bb2.png" width="60" height="25"> 돋보기 아이콘을 클릭한 후 "**mysql**"를 입력하면 "**MySQL Workbench 6.3 CE**" 프록그램이 검색됩니다. 
 
 27. 검색 결과에서 **MySQL Workbench 6.3 CE**를 클릭해서 실행합니다.
 
@@ -266,8 +268,8 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 <br>
 
 ### 데이터베이스에 연결
-29. **MySQL Workbench 홈 화면**에서 **+ 더하기** 기호를 클릭하여 새 연결을 만듭니다.
-
+29. **MySQL Workbench 홈 화면**에서 <img src="https://user-images.githubusercontent.com/48195985/83825209-a6084b00-a713-11ea-9675-e23528e18998.png" width="200" height="25">에  **더하기** 기호를 클릭하여 새 연결을 만듭니다.
+    <br>
 
 30. "**Setup New Connection**" 창에서 다음을 입력합니다.
   * **Connection Name** : ```Aurora```
@@ -279,15 +281,16 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 
 31. "**Test Connection**"을 클릭합니다.
-
+<br>
 32. "**OK**"를 클릭해서 **Success** 메시지를 닫습니다.
-
+<br>
 33. "**Setup New Connection**" 창의 "**OK**"를 클릭합니다.
-    > 새로운 **Aurora Connection**이 표시됩니다.
+> 새로운 **Aurora Connection**이 표시됩니다.
 
+<br>
 34. MySQL 인스턴스에 연결하려면 위의 단계를 반복합니다. 연결 이름과 호스트 이름을 사용하여 앞서 언급한 MySQL 엔드포인트 주소를 붙여넣습니다.
 
-    > _정상적으로 완료되면 MySQL과 Aurora 연결 2개가 표시되어야 합니다._
+> _정상적으로 완료되면 MySQL과 Aurora 연결 2개가 표시되어야 합니다._
 
 <br>
 <br>
@@ -296,11 +299,11 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 ## 작업 4 : SQL 덤프 파일을 데이터베이스로 가져오기
 
 35. "**원격 데스트탑 연결**"에서 Windows 시작 버튼 옆의 돋보기 아이콘을 클릭합니다.
-
+<br>
 36. 검색 창에 **powershell**을 입력합니다.
-
+<br>
 37. 검색 결과에서 "**Windows PowerShell**"을 클릭합니다.
-
+<br>
 38. PowerShell에서 다음을 입력합니다.
     ```powershell
     Invoke-WebRequest https://s3-us-west-2.amazonaws.com/aws-tc-largeobjects/SPLs/sharedDatabases/world.sql -OutFile c:\\Users\\Administrator\\Desktop\\world.sql
@@ -313,22 +316,25 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 
     ### MySQL 데이터베이스로 덤프 파일 가져오기
+<br>
 
-39. "**MySQL Workbench**" 응용프로그램에서 **MySQL** 연결을 클릭합니다.
+39. **MySQL Workbench** 응용프로그램에서 **MySQL** 연결을 클릭합니다.
+<br>
 
-40. "**MANAGEMENT**" 아래 "**Data Import/Restore**"를 클릭합니다.
+40.  "**MANAGEMENT**" 아래 "**Data Import/Restore**"를 클릭합니다.
     > ![image](https://user-images.githubusercontent.com/48195985/83733790-04d4b280-a689-11ea-9fa8-b62cbdfa6e45.png)
-41. "**Import Options**"에서 "**Import from Self-Contained File**"을 선택합니다.
+41.  "**Import Options**"에서 "**Import from Self-Contained File**"을 선택합니다.
+<br>
 
-42. 오른쪽 끝에 Ellpsis ![image](https://user-images.githubusercontent.com/48195985/83733978-4d8c6b80-a689-11ea-9cc9-df8a94231571.png) 버튼을 클릭합니다.
+42.  오른쪽 끝에 Ellpsis ![image](https://user-images.githubusercontent.com/48195985/83733978-4d8c6b80-a689-11ea-9cc9-df8a94231571.png) 버튼을 클릭합니다. <br>
 
-43. 왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
-    >
-44. **word** 덤프파일을 더블클릭합니다.
+44.   왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
 
-45. ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
+45.   **word** 덤프파일을 더블클릭합니다.
 
-46. 왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
+46.   ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
+
+47.   왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
     >![image](https://user-images.githubusercontent.com/48195985/83733871-26ce3500-a689-11ea-9151-a8b0e93e4cd4.png)
 
     > 아래처럼 world 스키마가 등록되어야 합니다.<br>
@@ -338,24 +344,25 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 ### 덤프 파일을 Aurora 데이터베이스로 가져오기
 
-47. Workbench 프로그램 좌측 상단에 홈 버튼을 클릭합니다.
+47.  Workbench 프로그램 좌측 상단에 홈 버튼을 클릭합니다.
 
-    > ![image](https://user-images.githubusercontent.com/48195985/83734885-8e38b480-a68a-11ea-8d00-bf6070795de5.png)
+> ![image](https://user-images.githubusercontent.com/48195985/83734885-8e38b480-a68a-11ea-8d00-bf6070795de5.png)
 
-    > 그러면 아래처럼 2개의 연결이 모두 표시됩니다.<br>
-    > ![image](https://user-images.githubusercontent.com/48195985/83735238-0ef7b080-a68b-11ea-98d6-6a1cd53f6d54.png)
+**그러면 아래처럼 2개의 연결이 모두 표시됩니다.<br>**
+> ![image](https://user-images.githubusercontent.com/48195985/83735238-0ef7b080-a68b-11ea-98d6-6a1cd53f6d54.png)
 
 
-48. **Aurora** 연결을 클릭합니다.
-    > Aurora 데이터베이스에 대한 쿼리창이 표시되고  또한 화면 상단에 MySQL, Aurora 두 개의 탭이 표시 되어야 합니다. <br>
+48.  **Aurora** 연결을 클릭합니다.
+> Aurora 데이터베이스에 대한 쿼리창이 표시되고  또한 화면 상단에 MySQL, Aurora 두 개의 탭이 표시 되어야 합니다. <br>
     
-    >![image](https://user-images.githubusercontent.com/48195985/83735512-7281de00-a68b-11ea-8657-d4331c6a7d54.png)
+>![image](https://user-images.githubusercontent.com/48195985/83735512-7281de00-a68b-11ea-8657-d4331c6a7d54.png)
 
 
-49. MySQL 데이터베이스로 가져오데 사용한 것과 동일한 단계를 사용하여 world 덤프 파일을 Aurora 데이터베이스로 가져옵니다.<br>
+49.  MySQL 데이터베이스로 가져오데 사용한 것과 동일한 단계를 사용하여 world 덤프 파일을 Aurora 데이터베이스로 가져옵니다.<br>
 
-    > **아래처럼 SCHEMAS 아래 world 데이터베이스가 생성되어야 합니다.**<br>
-    ![image](https://user-images.githubusercontent.com/48195985/83736002-03f15000-a68c-11ea-9d00-7dafe2286b57.png)
+> **아래처럼 SCHEMAS 아래 world 데이터베이스가 생성되어야 합니다.**
+<br>
+![image](https://user-images.githubusercontent.com/48195985/83736002-03f15000-a68c-11ea-9d00-7dafe2286b57.png)
 
 
 <br>
@@ -414,10 +421,10 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 58. 네비게이션 바에서 "**awsstudent@(AccountNumber)**"를 클릭하고 **Sign Out**을 클릭합니다.
 
 
-59. ![image](https://user-images.githubusercontent.com/48195985/83737959-a90d2800-a68e-11ea-8734-5a898a804dd2.png)을 클릭합니다.
+59. <img src="https://user-images.githubusercontent.com/48195985/83737959-a90d2800-a68e-11ea-8734-5a898a804dd2.png" width="70" height="25">을 클릭합니다.
 
 
-60. ![image](https://user-images.githubusercontent.com/48195985/83738082-cc37d780-a68e-11ea-9a87-f353b415a38b.png)를 클릭합니다.
+60. <img src="https://user-images.githubusercontent.com/48195985/83738082-cc37d780-a68e-11ea-9a87-f353b415a38b.png" width="40" height="25">를 클릭합니다.
 
 61. 실습에 대한 평가를 해주시고 "**Submit**"을 클릭합니다.
 
