@@ -33,11 +33,11 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 **2. ![image](https://user-images.githubusercontent.com/48195985/61844296-e4b95c00-aed9-11e9-8323-6790feb05b65.png)을 클릭하면 LAB을 위한 콘솔에 자동으로 로그인이 가능합니다.**
   
-  > <span style="color:red">※ 다른 지시가 없는 경우 Region을 변경하지 마십시오.</span>
+<span style="color:red">※ 다른 지시가 없는 경우 Region을 변경하지 마십시오.</span>
 
-  > <span style="color:red">일반적인 로그인 오류:</span>
+<span style="color:red">일반적인 로그인 오류:</span>
 
-  > <span style="color:red">Error : Federated login credentials</span>
+<span style="color:red">Error : Federated login credentials</span>
 
 <br>
 
@@ -84,7 +84,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 3. AWS관리 콘솔 상단의   <img src="https://user-images.githubusercontent.com/48195985/83719113-5c672400-a671-11ea-94f6-d8a91e7a568e.png" width="60" height="20">메뉴에서 **RDS**를 클릭합니다.
 
-4. 왼쪽 탐색창에서 **“데이터베이스”**를 클릭합니다.
+4. 왼쪽 탐색창에서 **데이터베이스**를 클릭합니다.
 
 5. 화면 우측 상단에 <img src="https://user-images.githubusercontent.com/48195985/61848523-577e0380-aee9-11e9-929a-466ce5c7c70b.png" width="120" height="25">을 클릭한 후 다음을 구성합니다.
 
@@ -173,7 +173,7 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 * ![image](https://user-images.githubusercontent.com/48195985/83721477-1a8cac80-a676-11ea-931f-9f054b79d58b.png)를 클릭하고 접속합니다.
 
 
-15. Password 입력창에는 지침의 왼쪽에 있는 **_AdministratorPassword_**에 있는 값을 입력합니다.
+15. Password 입력창에는 지침의 왼쪽에 있는 **AdministratorPassword**에 있는 값을 입력합니다.
 
 
 16. "**OK**"를 클릭합니다.
@@ -282,12 +282,14 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 31. "**Test Connection**"을 클릭합니다.
 <br>
+
 32. "**OK**"를 클릭해서 **Success** 메시지를 닫습니다.
 <br>
+
 33. "**Setup New Connection**" 창의 "**OK**"를 클릭합니다.
 > 새로운 **Aurora Connection**이 표시됩니다.
-
 <br>
+
 34. MySQL 인스턴스에 연결하려면 위의 단계를 반복합니다. 연결 이름과 호스트 이름을 사용하여 앞서 언급한 MySQL 엔드포인트 주소를 붙여넣습니다.
 
 > _정상적으로 완료되면 MySQL과 Aurora 연결 2개가 표시되어야 합니다._
@@ -298,12 +300,15 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 ## 작업 4 : SQL 덤프 파일을 데이터베이스로 가져오기
 
-35. "**원격 데스트탑 연결**"에서 Windows 시작 버튼 옆의 돋보기 아이콘을 클릭합니다.
+35. **원격 데스트탑 연결**에서 Windows 시작 버튼 옆의 돋보기 아이콘을 클릭합니다.
 <br>
+
 36. 검색 창에 **powershell**을 입력합니다.
 <br>
-37. 검색 결과에서 "**Windows PowerShell**"을 클릭합니다.
+
+37. 검색 결과에서 **Windows PowerShell**을 클릭합니다.
 <br>
+
 38. PowerShell에서 다음을 입력합니다.
     
 ```powershell
@@ -318,23 +323,25 @@ _이 명령은 데스크톱에 SQL 덤프 파일(world.sql)을 다운로드 합�
 ### MySQL 데이터베이스로 덤프 파일 가져오기
 <br>
 
-1.  **MySQL Workbench** 응용프로그램에서 **MySQL** 연결을 클릭합니다.
+39. **MySQL Workbench** 응용프로그램에서 **MySQL** 연결을 클릭합니다.
 <br>
 
-40.  "**MANAGEMENT**" 아래 "**Data Import/Restore**"를 클릭합니다.
-    > ![image](https://user-images.githubusercontent.com/48195985/83733790-04d4b280-a689-11ea-9fa8-b62cbdfa6e45.png)
-41.  "**Import Options**"에서 "**Import from Self-Contained File**"을 선택합니다.
+40. **MANAGEMENT** 아래 **Data Import/Restore**를 클릭합니다.
+> ![image](https://user-images.githubusercontent.com/48195985/83733790-04d4b280-a689-11ea-9fa8-b62cbdfa6e45.png)
 <br>
 
-42.  오른쪽 끝에 Ellpsis ![image](https://user-images.githubusercontent.com/48195985/83733978-4d8c6b80-a689-11ea-9cc9-df8a94231571.png) 버튼을 클릭합니다. <br>
+41. **Import Options**에서 **Import from Self-Contained File**을 선택합니다.
+<br>
 
-43.   왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
+42. 오른쪽 끝에 Ellpsis ![image](https://user-images.githubusercontent.com/48195985/83733978-4d8c6b80-a689-11ea-9cc9-df8a94231571.png) 버튼을 클릭합니다. <br>
+
+43. 왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
 
 44. **word** 덤프파일을 더블클릭합니다.
 
-45.   ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
+45. ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
 
-46.   왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
+46. 왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
 >![image](https://user-images.githubusercontent.com/48195985/83733871-26ce3500-a689-11ea-9151-a8b0e93e4cd4.png)
 
 아래처럼 world 스키마가 등록되어야 합니다.<br>
