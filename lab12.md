@@ -97,10 +97,10 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 6. **설정** 세션에서 다음을 구성합니다.
 
-* DB 클러스터 식별자 : **Aurora**
-* 마스터 사용자 이름 : **master**
-* 마스터 암호 : **master123**
-* 암호 확인 : **master123**
+* DB 클러스터 식별자 : ```Aurora```
+* 마스터 사용자 이름 : ```master```
+* 마스터 암호 : ```master123```
+* 암호 확인 : ```master123```
 
 
 
@@ -137,8 +137,8 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
 
 10. **추가 구성**을 클릭해서 확장한 후 다음을 구성합니다.
 
-* DB 인스턴스 식별자 : **Aurora**
-* 초기 데이터베이스 이름 : **MyDB**
+* DB 인스턴스 식별자 : ```Aurora```
+* 초기 데이터베이스 이름 : ```MyDB```
 
 
 11. **암호화** 섹션에서 <img src="https://user-images.githubusercontent.com/48195985/83718571-43aa3e80-a670-11ea-8407-615aff75b7bd.png" width="120" height="20">의 체크박스를 체크해제 합니다.
@@ -168,8 +168,8 @@ https://www.qwiklabs.com/ 에서 ”Introduction to Amazon Aurora“를 검색�
     > (윈도우 서버 왼쪽 하단에 <img src="https://user-images.githubusercontent.com/48195985/83720954-101de300-a675-11ea-816d-48c3bc276bb2.png" width="60" height="25"> 돋보기 아이콘을 클릭한 후 "**remote**"를 입력하면 "**Remote Desktop Connection**" 프록그램이 검색됩니다. 클릭해서 실행합니다.)
 
 * ![image](https://user-images.githubusercontent.com/48195985/83721219-9b977400-a675-11ea-88f6-c63074bec814.png) "Show Options"를 클릭합니다.
-* Computer : 실습 지침의 왼쪽에 있는 **_WindowsIP_**에 명시된 IP Address를 입력합니다.
-* User name : **\administrator**
+* Computer : 실습 지침의 왼쪽에 있는 **WindowsIP**에 명시된 IP Address를 입력합니다.
+* User name : ```\administrator```
 * ![image](https://user-images.githubusercontent.com/48195985/83721477-1a8cac80-a676-11ea-931f-9f054b79d58b.png)를 클릭하고 접속합니다.
 
 
@@ -305,20 +305,20 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 37. 검색 결과에서 "**Windows PowerShell**"을 클릭합니다.
 <br>
 38. PowerShell에서 다음을 입력합니다.
-    ```powershell
-    Invoke-WebRequest https://s3-us-west-2.amazonaws.com/aws-tc-largeobjects/SPLs/sharedDatabases/world.sql -OutFile c:\\Users\\Administrator\\Desktop\\world.sql
-    ```
-    _이 명령은 데스크톱에 SQL 덤프 파일(world.sql)을 다운로드 합니다._
+    
+```powershell
+Invoke-WebRequest https://s3-us-west-2.amazonaws.com/aws-tc-largeobjects/SPLs/sharedDatabases/world.sql -OutFile c:\\Users\\Administrator\\Desktop\\world.sql
+```
+_이 명령은 데스크톱에 SQL 덤프 파일(world.sql)을 다운로드 합니다._
 
-    <br>
-    <br>
-
-
-
-    ### MySQL 데이터베이스로 덤프 파일 가져오기
+<br>
 <br>
 
-39. **MySQL Workbench** 응용프로그램에서 **MySQL** 연결을 클릭합니다.
+
+### MySQL 데이터베이스로 덤프 파일 가져오기
+<br>
+
+1.  **MySQL Workbench** 응용프로그램에서 **MySQL** 연결을 클릭합니다.
 <br>
 
 40.  "**MANAGEMENT**" 아래 "**Data Import/Restore**"를 클릭합니다.
@@ -328,17 +328,17 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 
 42.  오른쪽 끝에 Ellpsis ![image](https://user-images.githubusercontent.com/48195985/83733978-4d8c6b80-a689-11ea-9cc9-df8a94231571.png) 버튼을 클릭합니다. <br>
 
-44.   왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
+43.   왼쪽 창에서 ![image](https://user-images.githubusercontent.com/48195985/83734098-83315480-a689-11ea-9476-2692a6d48a3e.png)을 클릭합니다.
 
-45.   **word** 덤프파일을 더블클릭합니다.
+44. **word** 덤프파일을 더블클릭합니다.
 
-46.   ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
+45.   ![image](https://user-images.githubusercontent.com/48195985/83734232-acea7b80-a689-11ea-9d67-2ee7ff8ebc15.png)를 클릭합니다.
 
-47.   왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
-    >![image](https://user-images.githubusercontent.com/48195985/83733871-26ce3500-a689-11ea-9151-a8b0e93e4cd4.png)
+46.   왼쪽창 아래 "**SCHEMAS**" 아래 refresh 심볼을 클릭합니다.
+>![image](https://user-images.githubusercontent.com/48195985/83733871-26ce3500-a689-11ea-9151-a8b0e93e4cd4.png)
 
-    > 아래처럼 world 스키마가 등록되어야 합니다.<br>
-    > ![image](https://user-images.githubusercontent.com/48195985/83734492-09e63180-a68a-11ea-9337-196d7176beef.png)
+아래처럼 world 스키마가 등록되어야 합니다.<br>
+> ![image](https://user-images.githubusercontent.com/48195985/83734492-09e63180-a68a-11ea-9337-196d7176beef.png)
 
 <br>
 
@@ -361,7 +361,7 @@ mydbcluster.cluster-ro-123456789012.us-east-1.rds.amazonaws.com:3306
 49.  MySQL 데이터베이스로 가져오데 사용한 것과 동일한 단계를 사용하여 world 덤프 파일을 Aurora 데이터베이스로 가져옵니다.<br>
 
 > **아래처럼 SCHEMAS 아래 world 데이터베이스가 생성되어야 합니다.**
-<br>
+
 ![image](https://user-images.githubusercontent.com/48195985/83736002-03f15000-a68c-11ea-9d00-7dafe2286b57.png)
 
 
