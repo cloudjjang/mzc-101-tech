@@ -23,3 +23,5 @@
 ### [Lab11. Introduction to AWS Lambda](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab11.md)
 
 ### [Lab12. Introduction to Amazon Aurora](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab12.md)
+
+### [Lab13. Build a Serverless Text-to-Speech Application with Amazon Polly](https://github.com/cloudjjang/mzc-101-tech/blob/master/lab13.md)
